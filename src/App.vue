@@ -1,14 +1,22 @@
 <script setup lang="ts">
 import Nav from './components/Nav.vue';
+import Question from './components/Question.vue';
+import Welcome from './components/Welcome.vue';
 
 
 </script>
 
 <template>
   <Nav />
-  <h1>
-    <<span class="text-italic">Tin</span>dev/>🌹
-  </h1>
+
+  <div class="title">
+    <h1>
+      <<span class="text-italic">Tin</span>dev/>🌹
+    </h1>
+  </div>
+
+  <Question />
+  <Welcome />
 </template>
 
 <style scoped>
@@ -23,5 +31,10 @@ h1 {
 
 .text-italic {
   font-style: italic;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
 }
 </style>

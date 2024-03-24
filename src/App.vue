@@ -1,5 +1,6 @@
 <script setup lang="ts">
 
+import Footer from './components/Footer.vue';
 import Nav from './components/Nav.vue';
 import Question from './components/Question.vue';
 import Welcome from './components/Welcome.vue';
@@ -21,6 +22,8 @@ import Match from './components/matching/Match.vue';
     <Welcome />
   </div>
   <Match />
+
+  <Footer />
 </template>
 
 <style scoped>

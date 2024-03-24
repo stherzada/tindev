@@ -3,7 +3,7 @@
 
 <template>
     <div>
-        <p>
+        <p class="welcome">
             Bem vindo(a) ao
             <span class="text-bold">
                 < tindev />
@@ -21,5 +21,10 @@
     text-decoration-thickness: 6px;
     text-decoration-style: solid;
 
+}
+
+.welcome {
+    display: flex;
+    justify-content: center;
 }
 </style>

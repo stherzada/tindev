@@ -1,7 +1,9 @@
 <script setup lang="ts">
+
 import Nav from './components/Nav.vue';
 import Question from './components/Question.vue';
 import Welcome from './components/Welcome.vue';
+import Match from './components/matching/Match.vue';
 
 
 </script>
@@ -14,9 +16,11 @@ import Welcome from './components/Welcome.vue';
       <<span class="text-italic">Tin</span>dev/>🌹
     </h1>
   </div>
-
-  <Question />
-  <Welcome />
+  <div class="container">
+    <Question />
+    <Welcome />
+  </div>
+  <Match />
 </template>
 
 <style scoped>
@@ -37,4 +41,8 @@ h1 {
   display: flex;
   justify-content: center;
 }
-</style>
+
+.container {
+  padding: 3rem;
+}
+</style>./components/Matching/Match.vue

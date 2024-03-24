@@ -1,10 +1,26 @@
 <script setup lang="ts">
+
+import { ref, onMounted } from 'vue';
+
+const currentYear = ref('');
+
+onMounted(() => {
+    updateYear();
+});
+
+function updateYear() {
+    const date = new Date();
+    const year = date.getFullYear();
+    currentYear.value = year.toString();
+}
+
 </script>
+
 
 <template>
     <footer>
         <div class="footer-text">
-            <p>Copyright <span>© 2024</span> </p>
+            <p>Copyright <span>© {{ currentYear }}</span> </p>
             <p>Sthefany Sther</p>
         </div>
         <div class="socials">

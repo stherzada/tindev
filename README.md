@@ -5,6 +5,7 @@
 ### 📍 Por quê do Projeto?
 - A ideia surgiu a partir de uma live de 12h, na qual era criar um "tinder" voltado para devs, por enquanto o projeto utiliza dados aleatórios gerados de uma API, futuramente serão pessoas **REAIS**, para a "bolha tech" se conheça mais, e gere network. 🌹
 
+![imagem](https://i.imgur.com/HnCZkuO.png)
 ---
 ### 🔗 Link para o projeto: 
 [TinDev](https://tindev-mu.vercel.app)
@@ -38,6 +39,7 @@ npm run dev
 
 - [Vue](https://vuejs.org)
 - [Vite](https://vitejs.dev)
+- [Axios](https://axios-http.com/ptbr/docs/intro)
 
 --- 
 <div align="center">Feito por <a href="https://www.linkedin.com/in/sthefany-sther/" target="_blank">Sther</a> 🤍</div>

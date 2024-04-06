@@ -21,7 +21,10 @@ import Match from './components/matching/Match.vue';
     <Question />
     <Welcome />
   </div>
-  <Match />
+  <Suspense>
+    <Match />
+  </Suspense>
+
 
   <Footer />
 </template>

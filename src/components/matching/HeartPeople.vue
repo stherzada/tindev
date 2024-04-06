@@ -1,12 +1,17 @@
 <script setup lang="ts">
+
+const props = defineProps<{ first: string, last: string, thumbnail: string }>();
+
+
+
 </script>
 
 <template>
     <div class="heart-people">
         <div class="mask">
-            <img src="https://avatars.githubusercontent.com/u/72408918?v=4" alt="">
+            <img :src='props.thumbnail' alt="">
         </div>
-        <p>Stherzada</p>
+        <p>{{ props.first }} {{ props.last }}</p>
     </div>
 </template>
 

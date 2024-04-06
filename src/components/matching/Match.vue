@@ -1,18 +1,34 @@
 <script setup lang="ts">
 import HeartPeople from './HeartPeople.vue';
 
+import {getDataPeople} from '../../services/axios.ts'
+import { ref, onMounted } from 'vue';
+
+
+const data = ref<null | any >(null)
+
+async function acessApi(){data.value = await getDataPeople()}
+
+onMounted(() => {
+    acessApi();
+    
+});
+
+
 </script>
 
 <template>
     <div class="container">
         <h1>Sua cara metade:</h1>
+       
         <div class="matching">
-            <HeartPeople />
+           
+            <HeartPeople  :thumbnail="data?.results[0].picture.large" :first="data?.results[0].name.first" :last="data?.results[0].name.last" />
             <div class="button-matching">
                 <p>match</p>
-                <button>Click! </button>
+                <button @click="acessApi" >Click! </button>
             </div>
-            <HeartPeople />
+            <HeartPeople :thumbnail="data?.results[1].picture.large" :first="data?.results[1].name.first" :last="data?.results[1].name.last" />
         </div>
     </div>
 

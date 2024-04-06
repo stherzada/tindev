@@ -19,11 +19,16 @@ const props = defineProps<{ first: string, last: string, thumbnail: string }>();
 <style scoped>
 .mask {
     mask-image: url("../../assets/heart.svg");
-    mask-size: 26rem;
+    mask-size: 20rem;
     mask-repeat: no-repeat;
     mask-position: center;
     transform: scale(1);
     animation: pulse 0.5s infinite;
+}
+
+
+img {
+    width: 20rem;
 }
 
 @keyframes pulse {
@@ -55,7 +60,6 @@ p {
     font-size: 2rem;
     font-weight: 500;
 
-    filter: drop-shadow(0px 1px 4px #8D0D0D);
-    color: #FFFFFF;
+    color: #000;
 }
 </style>

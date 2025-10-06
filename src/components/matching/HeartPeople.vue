@@ -2,19 +2,16 @@
 
 const props = defineProps<{ first: string, last: string, thumbnail: string }>();
 
-
-
 </script>
 
 <template>
-    <div class="heart-people">
+    <div class="flex flex-col items-center">
         <div class="mask">
-            <img :src='props.thumbnail' alt="">
+            <img :src='props.thumbnail' alt="" class="w-80">
         </div>
-        <p>{{ props.first }} {{ props.last }}</p>
+        <p class="text-3xl font-medium text-black font-fredoka">{{ props.first }} {{ props.last }}</p>
     </div>
 </template>
-
 
 <style scoped>
 .mask {
@@ -24,11 +21,6 @@ const props = defineProps<{ first: string, last: string, thumbnail: string }>();
     mask-position: center;
     transform: scale(1);
     animation: pulse 0.5s infinite;
-}
-
-
-img {
-    width: 20rem;
 }
 
 @keyframes pulse {
@@ -46,20 +38,5 @@ img {
         transform: scale(0.95);
         box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
     }
-}
-
-
-.heart-people {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-p {
-    font-family: "Fredoka", sans-serif;
-    font-size: 2rem;
-    font-weight: 500;
-
-    color: #000;
 }
 </style>

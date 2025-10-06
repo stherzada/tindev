@@ -18,43 +18,14 @@ function updateYear() {
 
 
 <template>
-    <footer>
-        <div class="footer-text">
-            <p>Copyright <span>© {{ currentYear }}</span> </p>
-            <p>Sthefany Sther</p>
+    <footer class="flex flex-col items-center">
+        <div class="flex flex-col items-center p-8 font-medium">
+            <p class="m-0">Copyright <span class="font-bold">© {{ currentYear }}</span> </p>
+            <p class="m-0">Sthefany Sther</p>
         </div>
-        <div class="socials">
+        <div class="flex gap-2">
             <a href="https://github.com/stherzada" target="_blank"><img src="../assets/github.svg"></a>
             <a href="https://www.twitch.tv/stherzada" target="_blank"><img src="../assets/twitch.svg"></a>
         </div>
     </footer>
 </template>
-
-<style scoped>
-footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.footer-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem;
-    font-weight: 500;
-}
-
-p {
-    margin: 0;
-}
-
-span {
-    font-weight: 700;
-}
-
-.socials {
-    display: flex;
-    gap: 0.5rem;
-}
-</style>

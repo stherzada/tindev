@@ -3,28 +3,12 @@
 
 <template>
     <div>
-        <p class="welcome">
+        <p class="flex justify-center">
             Bem vindo(a) ao
-            <span class="text-bold">
+            <span class="font-bold underline decoration-primary decoration-4">
                 < tindev />
             </span>
             onde você pode encontrar sua cara metade do mundo tech!
         </p>
     </div>
 </template>
-
-<style scoped>
-.text-bold {
-    font-weight: bold;
-    text-decoration: underline;
-    text-decoration-color: #8D0D0D;
-    text-decoration-thickness: 6px;
-    text-decoration-style: solid;
-
-}
-
-.welcome {
-    display: flex;
-    justify-content: center;
-}
-</style>

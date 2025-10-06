@@ -12,12 +12,12 @@ import Match from './components/matching/Match.vue';
 <template>
   <Nav />
 
-  <div class="title">
-    <h1>
-      <<span class="text-italic">Tin</span>dev/>🌹
+  <div class="flex justify-center">
+    <h1 class="font-anonymous text-6xl text-primary drop-shadow-[0_0_1px_#8D0D0D]">
+      <<span class="italic">Tin</span>dev/>🌹
     </h1>
   </div>
-  <div class="container">
+  <div class="p-12">
     <Question />
     <Welcome />
   </div>
@@ -27,28 +27,4 @@ import Match from './components/matching/Match.vue';
 
 
   <Footer />
-</template>
-
-<style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
-h1 {
-  font-family: "Anonymous Pro", monospace;
-  font-size: 60px;
-  color: #8D0D0D;
-  filter: drop-shadow(0px 0px 1px #8D0D0D);
-}
-
-.text-italic {
-  font-style: italic;
-}
-
-.title {
-  display: flex;
-  justify-content: center;
-}
-
-.container {
-  padding: 3rem;
-}
-</style>./components/Matching/Match.vue
+</template>./components/Matching/Match.vue

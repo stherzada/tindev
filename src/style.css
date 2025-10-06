@@ -1,27 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Fredoka:wght@300..700&family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
+@plugin "daisyui"{"themes": ["tindev"]};
+
+:root {
+  --color-primary: #8D0D0D;
+  --color-secondary: #1F2937;
+  --color-accent: #F59E0B;
+  --color-neutral: #374151;
+  --color-base-100: #FFFFFF;
+  --color-base-200: #F9FAFB;
+  --color-base-300: #E5E7EB;
+  --color-info: #3B82F6;
+  --color-success: #10B981;
+  --color-warning: #F59E0B;
+  --color-error: #EF4444;
+  --color-base-content: #1F2937;
+  
+ 
+  --gradient-primary: linear-gradient(135deg, var(--color-primary) 0%, #B91C1C 100%);
+  --gradient-accent: linear-gradient(135deg, var(--color-accent) 0%, #F97316 100%);
+  --gradient-neutral: linear-gradient(135deg, var(--color-neutral) 0%, var(--color-secondary) 100%);
+  
+  --shadow-primary: 0 4px 14px 0 rgba(141, 13, 13, 0.25);
+  --shadow-accent: 0 4px 14px 0 rgba(245, 158, 11, 0.25);
+  --shadow-neutral: 0 4px 14px 0 rgba(55, 65, 81, 0.15);
+  
+  --border-radius: 12px;
+  --border-radius-lg: 16px;
+  --border-radius-xl: 24px;
+}
 
 body {
   padding: 0;
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin: 0;
+  background: var(--color-base-100);
+  color: var(--color-secondary);
   font-family: "Montserrat", sans-serif;
+  line-height: 1.6;
+  min-height: 100vh;
 }
 
-.color-primary {
-  color: #8D0D0D;
-}
-
-.bg-primary {
-  background-color: #8D0D0D;
-}
-
-.underline-primary {
-  text-decoration: underline;
-  text-decoration-color: #8D0D0D;
-  text-decoration-thickness: 6px;
-  text-decoration-style: solid;
-}

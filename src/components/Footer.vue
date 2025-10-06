@@ -18,14 +18,18 @@ function updateYear() {
 
 
 <template>
-    <footer class="flex flex-col items-center">
-        <div class="flex flex-col items-center mt-8 mb-4 font-medium">
-            <p class="m-0">Copyright <span class="font-bold text-primary">© {{ currentYear }}</span> </p>
-            <p class="m-0">Sthefany Sther</p>
+    <footer class="flex flex-col items-center py-4">
+        <div class="flex flex-col items-center mt-6  sm:mt-8 mb-4 font-medium">
+            <p class="m-0 text-sm sm:text-base">Copyright <span class="font-bold text-primary">© {{ currentYear }}</span> </p>
+            <p class="m-0 text-sm sm:text-base">Sthefany Sther</p>
         </div>
-        <div class="flex gap-2">
-            <a href="https://github.com/stherzada" target="_blank"><img src="../assets/github.svg"></a>
-            <a href="https://www.twitch.tv/stherzada" target="_blank"><img src="../assets/twitch.svg"></a>
+        <div class="flex gap-3 sm:gap-4">
+            <a href="https://github.com/stherzada" target="_blank" class="touch-manipulation">
+                <img src="../assets/github.svg" class="w-6 h-6 sm:w-8 sm:h-8" alt="GitHub">
+            </a>
+            <a href="https://www.twitch.tv/stherzada" target="_blank" class="touch-manipulation">
+                <img src="../assets/twitch.svg" class="w-6 h-6 sm:w-8 sm:h-8" alt="Twitch">
+            </a>
         </div>
     </footer>
 </template>

@@ -10,3 +10,18 @@ body {
   justify-content: center;
   font-family: "Montserrat", sans-serif;
 }
+
+.color-primary {
+  color: #8D0D0D;
+}
+
+.bg-primary {
+  background-color: #8D0D0D;
+}
+
+.underline-primary {
+  text-decoration: underline;
+  text-decoration-color: #8D0D0D;
+  text-decoration-thickness: 6px;
+  text-decoration-style: solid;
+}

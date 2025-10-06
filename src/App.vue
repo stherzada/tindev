@@ -1,7 +1,7 @@
 <script setup lang="ts">
 
 import Footer from './components/Footer.vue';
-import Nav from './components/Nav.vue';
+
 import Question from './components/Question.vue';
 import Welcome from './components/Welcome.vue';
 import Match from './components/matching/Match.vue';
@@ -10,14 +10,12 @@ import Match from './components/matching/Match.vue';
 </script>
 
 <template>
-  <Nav />
-
-  <div class="flex justify-center">
-    <h1 class="font-anonymous text-6xl text-primary drop-shadow-[0_0_1px_#8D0D0D]">
+  <div class="flex justify-center mt-12">
+    <h1 class="font-anonymous text-6xl text-primary drop-shadow-[0_0_1px_#8D0D0D] color-primary font-bold">
       <<span class="italic">Tin</span>dev/>🌹
     </h1>
   </div>
-  <div class="p-12">
+  <div class="p-12 gap-4">
     <Question />
     <Welcome />
   </div>

@@ -19,8 +19,8 @@ function updateYear() {
 
 <template>
     <footer class="flex flex-col items-center">
-        <div class="flex flex-col items-center p-8 font-medium">
-            <p class="m-0">Copyright <span class="font-bold">© {{ currentYear }}</span> </p>
+        <div class="flex flex-col items-center mt-8 mb-4 font-medium">
+            <p class="m-0">Copyright <span class="font-bold color-primary">© {{ currentYear }}</span> </p>
             <p class="m-0">Sthefany Sther</p>
         </div>
         <div class="flex gap-2">

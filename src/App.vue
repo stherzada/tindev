@@ -10,7 +10,7 @@ import Match from './components/matching/Match.vue';
 </script>
 
 <template>
-  <div data-theme="tindev" class="min-h-screen bg-base-100">
+  <div data-theme="tindev" class="min-h-screen bg-base-100 overflow-x-hidden">
     <div class="flex justify-center mt-12">
       <h1 class="font-anonymous text-6xl text-primary drop-shadow-[0_0_1px_#8D0D0D] color-primary font-bold">
         <<span class="italic">Tin</span>dev/>🌹

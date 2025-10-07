@@ -1,13 +1,93 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Fredoka:wght@300..700&family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+@plugin "daisyui"{"themes": ["tindev"]};
 
+:root {
+  --color-primary: #8D0D0D;
+  --color-secondary: #1F2937;
+  --color-accent: #F59E0B;
+  --color-neutral: #374151;
+  --color-base-100: #FFFFFF;
+  --color-base-200: #F9FAFB;
+  --color-base-300: #E5E7EB;
+  --color-info: #3B82F6;
+  --color-success: #10B981;
+  --color-warning: #F59E0B;
+  --color-error: #EF4444;
+  --color-base-content: #1F2937;
+  
+  --color-primary-dark: #DC2626;
+  --color-secondary-dark: #F3F4F6;
+  --color-accent-dark: #FCD34D;
+  --color-neutral-dark: #9CA3AF;
+  --color-base-100-dark: #111111;
+  --color-base-200-dark: #2b2b2c;
+  --color-base-300-dark: #252525;
+  --color-base-content-dark: #F9FAFB;
+ 
+  --gradient-primary: linear-gradient(135deg, var(--color-primary) 0%, #B91C1C 100%);
+  --gradient-accent: linear-gradient(135deg, var(--color-accent) 0%, #F97316 100%);
+  --gradient-neutral: linear-gradient(135deg, var(--color-neutral) 0%, var(--color-secondary) 100%);
+  
+  --shadow-primary: 0 4px 14px 0 rgba(141, 13, 13, 0.25);
+  --shadow-accent: 0 4px 14px 0 rgba(245, 158, 11, 0.25);
+  --shadow-neutral: 0 4px 14px 0 rgba(55, 65, 81, 0.15);
+  
+  --border-radius: 12px;
+  --border-radius-lg: 16px;
+  --border-radius-xl: 24px;
+}
 
 body {
-
   padding: 0;
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin: 0;
+  background: var(--color-base-100);
+  color: var(--color-secondary);
   font-family: "Montserrat", sans-serif;
+  line-height: 1.6;
+  min-height: 100vh;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
+
+/* Dark theme styles */
+.dark {
+  --color-primary: var(--color-primary-dark);
+  --color-secondary: var(--color-secondary-dark);
+  --color-accent: var(--color-accent-dark);
+  --color-neutral: var(--color-neutral-dark);
+  --color-base-100: var(--color-base-100-dark);
+  --color-base-200: var(--color-base-200-dark);
+  --color-base-300: var(--color-base-300-dark);
+  --color-base-content: var(--color-base-content-dark);
+}
+
+.dark body {
+  background: var(--color-base-100-dark);
+  color: var(--color-secondary-dark);
+}
+
+.dark [data-theme="tindev"] {
+  background: var(--color-base-100-dark) !important;
+}
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+  
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  button, a {
+    touch-action: manipulation;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+}
+

@@ -6,6 +6,5 @@ export const getDataPeople = async () => {
 		url: "https://randomuser.me/api/?results=2",
 	});
 
-	console.log(response.data);
 	return response.data;
 };

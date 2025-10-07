@@ -1,54 +1,32 @@
 <script setup lang="ts">
 
 import Footer from './components/Footer.vue';
-import Nav from './components/Nav.vue';
 import Question from './components/Question.vue';
 import Welcome from './components/Welcome.vue';
 import Match from './components/matching/Match.vue';
+import DarkModeToggle from './components/DarkModeToggle.vue';
 
 
 </script>
 
 <template>
-  <Nav />
+  <div data-theme="tindev" class="min-h-screen bg-base-100 overflow-y-hidden overflow-x-hidden transition-colors duration-300">
+    <div class="fixed top-4 right-4 z-50">
+      <DarkModeToggle />
+    </div>
+    <div class="flex justify-center mt-4 sm:mt-8 lg:mt-12 px-4">
+      <h1 class="font-anonymous text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-primary drop-shadow-[0_0_1px_#8D0D0D] color-primary font-bold text-center">
+        <<span class="italic">Tin</span>dev/>🌹
+      </h1>
+    </div>
+    <div class="p-4 sm:p-6 md:p-8 lg:p-12 gap-2 sm:gap-4">
+      <Question />
+      <Welcome />
+    </div>
+    <Suspense>
+      <Match />
+    </Suspense>
 
-  <div class="title">
-    <h1>
-      <<span class="text-italic">Tin</span>dev/>🌹
-    </h1>
+    <Footer />
   </div>
-  <div class="container">
-    <Question />
-    <Welcome />
-  </div>
-  <Suspense>
-    <Match />
-  </Suspense>
-
-
-  <Footer />
-</template>
-
-<style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
-h1 {
-  font-family: "Anonymous Pro", monospace;
-  font-size: 60px;
-  color: #8D0D0D;
-  filter: drop-shadow(0px 0px 1px #8D0D0D);
-}
-
-.text-italic {
-  font-style: italic;
-}
-
-.title {
-  display: flex;
-  justify-content: center;
-}
-
-.container {
-  padding: 3rem;
-}
-</style>./components/Matching/Match.vue
+</template>./components/Matching/Match.vue

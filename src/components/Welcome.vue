@@ -2,29 +2,14 @@
 </script>
 
 <template>
-    <div>
-        <p class="welcome">
-            Bem vindo(a) ao
-            <span class="text-bold">
+    <div class="px-4">
+        <p class="flex flex-col sm:flex-row items-center justify-center mt-4 text-center text-sm sm:text-base md:text-lg">
+            <span>Bem vindo(a) ao</span>
+            <span class="font-bold underline decoration-primary decoration-2 sm:decoration-4 mx-2">
                 < tindev />
             </span>
-            onde você pode encontrar sua cara metade do mundo tech!
+            <span class="hidden sm:inline">onde você pode encontrar sua cara metade do mundo tech!</span>
+            <span class="sm:hidden">onde você pode encontrar sua cara metade do mundo tech!</span>
         </p>
     </div>
 </template>
-
-<style scoped>
-.text-bold {
-    font-weight: bold;
-    text-decoration: underline;
-    text-decoration-color: #8D0D0D;
-    text-decoration-thickness: 6px;
-    text-decoration-style: solid;
-
-}
-
-.welcome {
-    display: flex;
-    justify-content: center;
-}
-</style>

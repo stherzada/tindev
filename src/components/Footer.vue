@@ -1,6 +1,7 @@
 <script setup lang="ts">
 
-import { ref, onMounted } from 'vue';
+import { ref, onMounted } from 'vue';   
+import { Github, Twitch } from 'lucide-vue-next';
 
 const currentYear = ref('');
 
@@ -18,43 +19,18 @@ function updateYear() {
 
 
 <template>
-    <footer>
-        <div class="footer-text">
-            <p>Copyright <span>© {{ currentYear }}</span> </p>
-            <p>Sthefany Sther</p>
+    <footer class="flex flex-col items-center py-4">
+        <div class="flex flex-col items-center mt-6  sm:mt-8 mb-4 font-medium">
+            <p class="m-0 text-sm sm:text-base">Copyright <span class="font-bold text-primary">© {{ currentYear }}</span> </p>
+            <p class="m-0 text-sm sm:text-base">Sthefany Sther</p>
         </div>
-        <div class="socials">
-            <a href="https://github.com/stherzada" target="_blank"><img src="../assets/github.svg"></a>
-            <a href="https://www.twitch.tv/stherzada" target="_blank"><img src="../assets/twitch.svg"></a>
+        <div class="flex gap-3 sm:gap-4">
+            <a href="https://github.com/stherzada" target="_blank" class="touch-manipulation">
+                <Github class="w-6 h-6 sm:w-8 sm:h-8 text-primary" />
+            </a>
+            <a href="https://www.twitch.tv/stherzada" target="_blank" class="touch-manipulation">
+                <Twitch class="w-6 h-6 sm:w-8 sm:h-8 text-primary" />
+            </a>
         </div>
     </footer>
 </template>
-
-<style scoped>
-footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.footer-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem;
-    font-weight: 500;
-}
-
-p {
-    margin: 0;
-}
-
-span {
-    font-weight: 700;
-}
-
-.socials {
-    display: flex;
-    gap: 0.5rem;
-}
-</style>

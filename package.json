@@ -10,10 +10,17 @@
   },
   "dependencies": {
     "axios": "^1.12.0",
+    "lucide": "^0.545.0",
+    "lucide-vue-next": "^0.545.0",
     "vue": "^3.4.21"
   },
   "devDependencies": {
+    "@tailwindcss/vite": "^4.1.14",
     "@vitejs/plugin-vue": "^6.0.0",
+    "autoprefixer": "^10.4.21",
+    "daisyui": "^5.1.27",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.14",
     "typescript": "^5.2.2",
     "vite": "^7.1.9",
     "vue-tsc": "^2.0.6"

@@ -1,6 +1,7 @@
 <script setup lang="ts">
 
-import { ref, onMounted } from 'vue';
+import { ref, onMounted } from 'vue';   
+import { Github, Twitch } from 'lucide-vue-next';
 
 const currentYear = ref('');
 
@@ -25,10 +26,10 @@ function updateYear() {
         </div>
         <div class="flex gap-3 sm:gap-4">
             <a href="https://github.com/stherzada" target="_blank" class="touch-manipulation">
-                <img src="../assets/github.svg" class="w-6 h-6 sm:w-8 sm:h-8" alt="GitHub">
+                <Github class="w-6 h-6 sm:w-8 sm:h-8 text-primary" />
             </a>
             <a href="https://www.twitch.tv/stherzada" target="_blank" class="touch-manipulation">
-                <img src="../assets/twitch.svg" class="w-6 h-6 sm:w-8 sm:h-8" alt="Twitch">
+                <Twitch class="w-6 h-6 sm:w-8 sm:h-8 text-primary" />
             </a>
         </div>
     </footer>

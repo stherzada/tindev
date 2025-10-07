@@ -16,6 +16,14 @@
   --color-error: #EF4444;
   --color-base-content: #1F2937;
   
+  --color-primary-dark: #DC2626;
+  --color-secondary-dark: #F3F4F6;
+  --color-accent-dark: #FCD34D;
+  --color-neutral-dark: #9CA3AF;
+  --color-base-100-dark: #111111;
+  --color-base-200-dark: #2b2b2c;
+  --color-base-300-dark: #252525;
+  --color-base-content-dark: #F9FAFB;
  
   --gradient-primary: linear-gradient(135deg, var(--color-primary) 0%, #B91C1C 100%);
   --gradient-accent: linear-gradient(135deg, var(--color-accent) 0%, #F97316 100%);
@@ -41,6 +49,28 @@ body {
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: transparent;
   touch-action: manipulation;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Dark theme styles */
+.dark {
+  --color-primary: var(--color-primary-dark);
+  --color-secondary: var(--color-secondary-dark);
+  --color-accent: var(--color-accent-dark);
+  --color-neutral: var(--color-neutral-dark);
+  --color-base-100: var(--color-base-100-dark);
+  --color-base-200: var(--color-base-200-dark);
+  --color-base-300: var(--color-base-300-dark);
+  --color-base-content: var(--color-base-content-dark);
+}
+
+.dark body {
+  background: var(--color-base-100-dark);
+  color: var(--color-secondary-dark);
+}
+
+.dark [data-theme="tindev"] {
+  background: var(--color-base-100-dark) !important;
 }
 
 /* Mobile optimizations */

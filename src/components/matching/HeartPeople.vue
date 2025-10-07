@@ -9,7 +9,7 @@ const props = defineProps<{ first: string, last: string, thumbnail: string }>();
         <div class="mask">
             <img :src='props.thumbnail' alt="" class="w-48 sm:w-64 md:w-72 lg:w-80">
         </div>
-        <p class="text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium text-black font-fredoka text-center px-2">{{ props.first }} {{ props.last }}</p>
+        <p class="text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium text-base-content font-fredoka text-center px-2">{{ props.first }} {{ props.last }}</p>
     </div>
 </template>
 
